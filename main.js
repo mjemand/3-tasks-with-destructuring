@@ -13,7 +13,7 @@ const user = {
     lastName: 'Doe'
 };
 
-const { firstName, lastName, job = 'undefined'} = user;
+const { firstName = 'unknown', lastName = 'unknown', job = 'unknown'} = user;
 console.log(firstName, lastName, job);
 
 /* 2.
@@ -25,7 +25,7 @@ Adott az alábbi objektum:
 Ments el külön l, f, és j változókba a fenti objektum lastName, firstName, és job property-jeit!
 Ha valamelyik nincs megadva, akkor az érték legyen a “unknown” string! */
 
-const { firstName: f, lastName: l, job: j = 'undefined'} = user;
+const { firstName: f = 'unknown', lastName: l = 'unknown', job: j = 'unknown'} = user;
 console.log(f, l, j);
 
 /* 3.
